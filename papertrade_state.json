@@ -1,0 +1,218 @@
+{
+  "timestamp": "2025-11-27 21:50:00+00:00",
+  "equity": 1017.9536399468013,
+  "margin_used": 901.1727348791269,
+  "pnl_total": 17.95363994680133,
+  "drawdown": -0.0895775334644664,
+  "winrate": 0.4583333333333333,
+  "last_action": "BTCUSDT OPEN_LONG (27x)",
+  "markets": {
+    "BTCUSDT": {
+      "price": 91503.32,
+      "p15": 0.8123928904533386,
+      "p1h": 0.914820762218188,
+      "state": "LONG",
+      "leverage": 27,
+      "pnl": -0.6891361080264898,
+      "margin": 184.0673232161848
+    },
+    "ETHUSDT": {
+      "price": 3037.39,
+      "p15": 0.8767556174764658,
+      "p1h": 0.956184680420668,
+      "state": "LONG",
+      "leverage": 29,
+      "pnl": 37.41401458899746,
+      "margin": 186.20524809035666
+    },
+    "SOLUSDT": {
+      "price": 141.99,
+      "p15": 0.7002859711647034,
+      "p1h": 0.5553179383277893,
+      "state": "LONG",
+      "leverage": 23,
+      "pnl": -8.440794909527852,
+      "margin": 168.46074552956287
+    },
+    "AVAXUSDT": {
+      "price": 15.04,
+      "p15": 0.9671418159240419,
+      "p1h": 0.9997715832695449,
+      "state": "LONG",
+      "leverage": 27,
+      "pnl": -16.54875019053549,
+      "margin": 184.978252129761
+    },
+    "XRPUSDT": {
+      "price": 2.2174,
+      "p15": 0.9103619447022817,
+      "p1h": 0.9887266325073576,
+      "state": "LONG",
+      "leverage": 23,
+      "pnl": -22.515927630112138,
+      "margin": 177.46116591326162
+    }
+  },
+  "trades": [
+    {
+      "symbol": "SOLUSDT",
+      "side": "LONG",
+      "entry": 142.28,
+      "exit": 142.75,
+      "pnl": 10.763839719125773,
+      "minutes": 23
+    },
+    {
+      "symbol": "BTCUSDT",
+      "side": "LONG",
+      "entry": 91496.36,
+      "exit": 91745.29,
+      "pnl": 11.842853003353989,
+      "minutes": 15
+    },
+    {
+      "symbol": "XRPUSDT",
+      "side": "SHORT",
+      "entry": 2.2246,
+      "exit": 2.2294,
+      "pnl": -13.476066440700784,
+      "minutes": 15
+    },
+    {
+      "symbol": "SOLUSDT",
+      "side": "LONG",
+      "entry": 142.74,
+      "exit": 143.0,
+      "pnl": 4.6320847983372,
+      "minutes": 15
+    },
+    {
+      "symbol": "BTCUSDT",
+      "side": "SHORT",
+      "entry": 91822.0,
+      "exit": 91651.37,
+      "pnl": 7.435611393389642,
+      "minutes": 15
+    },
+    {
+      "symbol": "XRPUSDT",
+      "side": "SHORT",
+      "entry": 2.2295,
+      "exit": 2.2233,
+      "pnl": 9.534234347551028,
+      "minutes": 15
+    },
+    {
+      "symbol": "SOLUSDT",
+      "side": "LONG",
+      "entry": 142.93,
+      "exit": 142.32,
+      "pnl": -18.39311628026128,
+      "minutes": 19
+    },
+    {
+      "symbol": "BTCUSDT",
+      "side": "LONG",
+      "entry": 91622.86,
+      "exit": 91620.84,
+      "pnl": -2.552501758596319,
+      "minutes": 15
+    },
+    {
+      "symbol": "BTCUSDT",
+      "side": "LONG",
+      "entry": 91619.45,
+      "exit": 91700.95,
+      "pnl": 1.9573798552202955,
+      "minutes": 15
+    },
+    {
+      "symbol": "XRPUSDT",
+      "side": "LONG",
+      "entry": 2.2221,
+      "exit": 2.2318,
+      "pnl": 18.859018250290827,
+      "minutes": 56
+    },
+    {
+      "symbol": "BTCUSDT",
+      "side": "LONG",
+      "entry": 91609.14,
+      "exit": 91546.8,
+      "pnl": -6.089983546775749,
+      "minutes": 22
+    },
+    {
+      "symbol": "XRPUSDT",
+      "side": "SHORT",
+      "entry": 2.2305,
+      "exit": 2.2297,
+      "pnl": -0.5815379681345378,
+      "minutes": 15
+    },
+    {
+      "symbol": "SOLUSDT",
+      "side": "LONG",
+      "entry": 142.35,
+      "exit": 142.64,
+      "pnl": 5.594179357564361,
+      "minutes": 71
+    },
+    {
+      "symbol": "BTCUSDT",
+      "side": "LONG",
+      "entry": 91480.41,
+      "exit": 91475.63,
+      "pnl": -3.0979085651062173,
+      "minutes": 17
+    },
+    {
+      "symbol": "SOLUSDT",
+      "side": "LONG",
+      "entry": 142.79,
+      "exit": 142.78,
+      "pnl": -2.4440961775659535,
+      "minutes": 15
+    },
+    {
+      "symbol": "BTCUSDT",
+      "side": "LONG",
+      "entry": 91464.2,
+      "exit": 91486.29,
+      "pnl": -1.443628110433469,
+      "minutes": 15
+    },
+    {
+      "symbol": "SOLUSDT",
+      "side": "LONG",
+      "entry": 142.7,
+      "exit": 142.0,
+      "pnl": -21.481049040192136,
+      "minutes": 15
+    },
+    {
+      "symbol": "BTCUSDT",
+      "side": "LONG",
+      "entry": 91433.18,
+      "exit": 91486.28,
+      "pnl": 0.441424775642511,
+      "minutes": 18
+    },
+    {
+      "symbol": "BTCUSDT",
+      "side": "LONG",
+      "entry": 91537.05,
+      "exit": 91552.13,
+      "pnl": -1.7079456951706717,
+      "minutes": 16
+    },
+    {
+      "symbol": "SOLUSDT",
+      "side": "LONG",
+      "entry": 142.47,
+      "exit": 142.25,
+      "pnl": -7.955255058799221,
+      "minutes": 17
+    }
+  ]
+}

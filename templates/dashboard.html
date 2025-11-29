@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Meta Trading Dashboard</title>
+    <link rel="stylesheet" href="/static/dashboard.css">
+</head>
+
+<body>
+    <h1>Meta-Coordinator — LIVE Dashboard</h1>
+
+    <div id="equity-panel" class="panel main-panel">
+        <h2>Equity & Performance</h2>
+        <div id="equity-data"></div>
+    </div>
+
+    <div id="markets" class="panel-grid"></div>
+
+    <div id="trades" class="panel">
+        <h2>Trade Log (chiusi)</h2>
+        <div id="trade-log"></div>
+    </div>
+
+    <script>
+        const evt = new EventSource("/events");
+
+        evt.onmessage = function (e) {
+            const data = JSON.parse(e.data);
+
+            // EQUITY PANEL
+            document.getElementById("equity-data").innerHTML = `
+                <p><strong>Equity:</strong> ${data.equity.toFixed(4)}</p>
+                <p><strong>Balance:</strong> ${data.balance.toFixed(4)}</p>
+                <p><strong>PNL Totale:</strong> ${data.pnl_total.toFixed(4)}</p>
+                <p><strong>Drawdown:</strong> ${data.drawdown.toFixed(4)}</p>
+                <p><strong>Trades chiusi:</strong> ${data.trades_closed}</p>
+                <p><strong>Win-rate:</strong> ${(data.winrate*100).toFixed(1)}%</p>
+                <p><strong>Ultima azione:</strong> ${data.last_action}</p>
+            `;
+
+            // MARKET PANELS
+            let html = "";
+            for (const sym in data.markets) {
+                const m = data.markets[sym];
+
+                let color =
+                    m.state === "LONG" ? "#1ec94c" :
+                    m.state === "SHORT" ? "#e03b3b" :
+                    "#888";
+
+                html += `
+                    <div class="market-box" style="border-color:${color}">
+                        <h3>${sym}</h3>
+                        <p><strong>Prezzo:</strong> ${m.price}</p>
+                        <p><strong>15m:</strong> ${m.p15.toFixed(3)}</p>
+                        <p><strong>1h:</strong> ${m.p1h.toFixed(3)}</p>
+                        <p><strong>EMA:</strong> ${m.p_ema.toFixed(3)}</p>
+                        <p><strong>SMA:</strong> ${m.p_sma.toFixed(3)}</p>
+                        <p><strong>Bias:</strong> ${m.bias}</p>
+                        <p><strong>Stato:</strong> ${m.state}</p>
+                        <p><strong>Durata:</strong> ${m.minutes_hold} min</p>
+                        <p><strong>PnL:</strong> ${m.pnl.toFixed(5)}</p>
+                    </div>
+                `;
+            }
+
+            document.getElementById("markets").innerHTML = html;
+
+            // TRADES LOG
+            let log = "";
+            data.trades.forEach(t => {
+                log += `
+                    <div class="trade-card ${t.pnl>=0?'win':'loss'}">
+                        <strong>${t.symbol}</strong> — ${t.side}<br>
+                        entry=${t.entry} — exit=${t.exit}<br>
+                        pnl=${t.pnl.toFixed(5)}<br>
+                        durata=${t.minutes} min
+                    </div>
+                `;
+            });
+            document.getElementById("trade-log").innerHTML = log;
+        }
+    </script>
+
+</body>
+</html>

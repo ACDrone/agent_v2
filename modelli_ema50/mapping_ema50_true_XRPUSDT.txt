@@ -1,0 +1,5 @@
+EMA50 TRUE MODEL (3h horizon)
+target_ema50 +1 => 1 (LONG forte sopra EMA50)
+target_ema50 -1 => 0 (SHORT forte sotto EMA50)
+k usato (EMA50): 2.0
+horizon minuti: 180

@@ -1,0 +1,8 @@
+streamlit
+pandas
+numpy
+requests
+joblib
+lightgbm
+xgboost
+# Aggiungi qui altre dipendenze se i tuoi script le usano (es. scikit-learn)

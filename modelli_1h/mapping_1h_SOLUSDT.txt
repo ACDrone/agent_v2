@@ -1,0 +1,4 @@
+target +1 => 1 (LONG)
+target -1 => 0 (SHORT)
+k usato (1h): 1.2
+horizon: 60 minuti

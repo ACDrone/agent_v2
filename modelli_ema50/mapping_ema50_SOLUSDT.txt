@@ -1,0 +1,5 @@
+EMA50 MODEL (3h horizon)
+target +1 => 1 (LONG)
+target -1 => 0 (SHORT)
+k usato (EMA50): 1.2
+horizon: 180 minuti

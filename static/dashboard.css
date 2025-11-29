@@ -1,0 +1,53 @@
+body {
+    background: #111;
+    color: #eee;
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.panel {
+    background: #1a1a1a;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 12px #0006;
+}
+
+.main-panel {
+    border-left: 5px solid #00b7ff;
+}
+
+.panel-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+}
+
+.market-box {
+    background: #222;
+    border: 2px solid #666;
+    border-radius: 10px;
+    padding: 12px;
+}
+
+.trade-card {
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 8px;
+    background: #222;
+}
+
+.trade-card.win {
+    border-left: 4px solid #12d66c;
+}
+
+.trade-card.loss {
+    border-left: 4px solid #d60f2b;
+}

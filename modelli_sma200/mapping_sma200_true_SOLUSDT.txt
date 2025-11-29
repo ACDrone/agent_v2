@@ -1,0 +1,5 @@
+SMA200 TRUE MODEL (6h horizon)
+target_sma200 +1 => 1 (LONG forte sopra SMA200)
+target_sma200 -1 => 0 (SHORT forte sotto SMA200)
+k usato (SMA200): 2.5
+horizon minuti: 360

@@ -1,0 +1,5 @@
+SMA200 MODEL (6h horizon)
+target +1 => 1 (LONG)
+target -1 => 0 (SHORT)
+k usato (SMA200): 1.2
+horizon: 360 minuti
